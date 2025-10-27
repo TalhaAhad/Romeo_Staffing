@@ -1055,7 +1055,8 @@ button:hover:after {
 .card {
   height: 100%;
   border-radius: 50px;
-  background: linear-gradient(135deg, cyan 0%, rgb(0.16, 0.09, 281.35) 100%);
+  background: linear-gradient(135deg, cyan 0%, rgb(4, 156, 156) 100%);
+  /* color: #fff; */
   transition: all 0.5s ease-in-out;
   transform-style: preserve-3d;
   box-shadow: rgba(5, 71, 17, 0) 40px 50px 25px -40px,
@@ -1071,12 +1072,14 @@ button:hover:after {
   display: block;
   font-weight: 900;
   font-size: 20px;
+  color: black;
 }
 
 .content .text {
   display: block;
   font-size: 15px;
   margin-top: 20px;
+  color: black;
 }
 
 .parent:hover .card {
