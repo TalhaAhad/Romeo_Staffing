@@ -9,7 +9,7 @@
 body {
   font-family: "Arial", sans-serif;
 }
-
+ 
 /* Header start */
 .banner {
   position: relative;
@@ -333,8 +333,8 @@ nav.nav-scrolled {
   background-repeat: no-repeat;
   height: 100vh;
   margin-top: 50px;
-  margin-bottom: 200px;
   width: 100%;
+  margin-bottom: 120px;
 }
 
 .service-item {
@@ -355,6 +355,24 @@ nav.nav-scrolled {
   color: rgb(168, 17, 168);
 }
 
+@media (max-width: 1024px) {
+  .services {
+    background-position: top center;
+    background-size: cover;
+    height: auto;
+    padding: 50px 20px;
+  }
+}
+
+@media (max-width: 912px) {
+  .services {
+    background-position: top center;
+    background-size: cover;
+    height: auto;
+    padding: 50px 20px;
+  }
+}
+
 @media (max-width: 768px) {
   .services {
     background-position: top center;
@@ -371,8 +389,7 @@ nav.nav-scrolled {
   background-repeat: no-repeat;
   background-position: right center;
   background-size: contain;
-  margin-top: 150px;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
   padding-left: 50px;
   padding-top: 150px;
   background-color: rgb(175, 108, 238);
