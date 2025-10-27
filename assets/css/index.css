@@ -1086,7 +1086,7 @@ button:hover:after {
 .card {
   height: 100%;
   border-radius: 50px;
-  background: linear-gradient(135deg, blueviolet 0%, blue 100%);
+  background: linear-gradient(135deg, rgb(149, 79, 214) 0%, rgb(61, 61, 177) 100%);
   /* color: #fff; */
   transition: all 0.5s ease-in-out;
   transform-style: preserve-3d;
