@@ -22,52 +22,54 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-const slides = document.querySelectorAll(".slide-2");
-const dots = document.querySelectorAll(".dot");
-let current = 0;
+document.addEventListener("DOMContentLoaded", () => {
+  const slides = document.querySelectorAll(".slide-2");
+  const dots = document.querySelectorAll(".dot");
+  let current = 0;
 
-function updateSlides() {
-  slides.forEach((slide, i) => {
-    slide.classList.remove("active", "prev", "next");
-    dots[i].classList.remove("active");
-  });
+  function updateSlides() {
+    slides.forEach((slide, i) => {
+      slide.classList.remove("active", "prev", "next");
+      dots[i].classList.remove("active");
+    });
 
-  const prev = (current - 1 + slides.length) % slides.length;
-  const next = (current + 1) % slides.length;
+    const prev = (current - 1 + slides.length) % slides.length;
+    const next = (current + 1) % slides.length;
 
-  slides[current].classList.add("active");
-  slides[prev].classList.add("prev");
-  slides[next].classList.add("next");
-  dots[current].classList.add("active");
-}
+    slides[current].classList.add("active");
+    slides[prev].classList.add("prev");
+    slides[next].classList.add("next");
+    dots[current].classList.add("active");
+  }
 
-function nextSlide() {
-  current = (current + 1) % slides.length;
-  updateSlides();
-}
-
-dots.forEach((dot, i) => {
-  dot.addEventListener("click", () => {
-    current = i;
+  function nextSlide() {
+    current = (current + 1) % slides.length;
     updateSlides();
-  });
-});
+  }
 
-updateSlides();
-setInterval(nextSlide, 3000);
+  dots.forEach((dot, i) => {
+    dot.addEventListener("click", () => {
+      current = i;
+      updateSlides();
+    });
+  });
+
+  updateSlides();
+  setInterval(nextSlide, 3000);
+});
 
 
 
 
 const slides1 = document.querySelectorAll('.testimonial-slide');
-    const dots1 = document.querySelectorAll('.dot');
+    const dots1 = document.querySelectorAll('.dot1');
     let index = 0;
 
     function showSlide(i) {
-      slides1.forEach(slide => slide.classList.remove('active'));
-      dots1.forEach(dot => dot.classList.remove('active'));
-      slides1[i].classList.add('active');
-      dots1[i].classList.add('active');
+      slides1.forEach(slide => slide.classList.remove('active1'));
+      dots1.forEach(dot => dot.classList.remove('active1'));
+      slides1[i].classList.add('active1');
+      dots1[i].classList.add('active1');
     }
 
     function nextSlide() {

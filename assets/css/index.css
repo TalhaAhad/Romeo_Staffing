@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+ 
 body {
   font-family: "Arial", sans-serif;
 }
@@ -547,7 +547,6 @@ button:hover:after {
 }
 
 .mb-1 {
-  border-bottom: 10px ridge #ffffff;
   width: 250px;
 }
 
@@ -898,7 +897,7 @@ button:hover:after {
   animation: fadeIn 1s ease;
 }
 
-.testimonial-slide.active {
+.testimonial-slide.active1 {
   display: block;
 }
 
@@ -942,7 +941,7 @@ button:hover:after {
   margin-top: 30px;
 }
 
-.dot {
+.dot1 {
   width: 10px;
   height: 10px;
   background-color: #ccc;
@@ -952,7 +951,7 @@ button:hover:after {
   transition: 0.3s;
 }
 
-.dot.active {
+.dot1.active1 {
   background-color: #0d4d4d;
 }
 
