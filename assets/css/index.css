@@ -670,6 +670,18 @@ button:hover:after {
   margin-top: 60px;
 }
 
+.industries-section h1{
+  color: black;
+}
+
+.industries-section em{
+  color: blueviolet;
+}
+
+.industries-section span{
+  color: blue;
+}
+
 .grid {
   margin: 20px 60px;
 }
@@ -1068,13 +1080,13 @@ button:hover:after {
 .parent {
   width: 500px;
   height: 300px;
-  perspective: 1000px;
+  perspective: 1000px; 
 }
 
 .card {
   height: 100%;
   border-radius: 50px;
-  background: linear-gradient(135deg, blueviolet 50%, blue 100%);
+  background: linear-gradient(135deg, blueviolet 0%, blue 100%);
   /* color: #fff; */
   transition: all 0.5s ease-in-out;
   transform-style: preserve-3d;
@@ -1091,14 +1103,14 @@ button:hover:after {
   display: block;
   font-weight: 900;
   font-size: 20px;
-  color: black;
+  color: white;
 }
 
 .content .text {
   display: block;
   font-size: 15px;
   margin-top: 20px;
-  color: black;
+  color: white;
 }
 
 .parent:hover .card {
